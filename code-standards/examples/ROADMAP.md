@@ -1,6 +1,6 @@
 # Roadmap
 
-<!-- The shape of a junglestyle docs/ROADMAP.md, for the made-up product in SPEC.md. No slice delivers
+<!-- The shape of a lowmagic docs/ROADMAP.md, for the made-up product in SPEC.md. No slice delivers
 OUTPUT-3, so the roadmap defers it. -->
 
 The order reachable gets built in. Each slice is usable on its own, names what a user would notice and the

@@ -1,6 +1,6 @@
 # Ansible standards
 
-Decisions for Ansible in deployment repos, beneath the org [standards](https://github.com/junglestyle/.github/blob/main/code-standards/README.md), whose Deployment repos section says what such a repo holds. `.ansible-lint` holds the mechanical rules, such as full module names and role-prefixed variables. This file holds the rest, including where it's stricter than the linter.
+Decisions for Ansible in deployment repos, beneath the org [standards](https://github.com/lowmagic/.github/blob/main/code-standards/README.md), whose Deployment repos section says what such a repo holds. `.ansible-lint` holds the mechanical rules, such as full module names and role-prefixed variables. This file holds the rest, including where it's stricter than the linter.
 
 ## Layout
 
@@ -21,7 +21,7 @@ Decisions for Ansible in deployment repos, beneath the org [standards](https://g
 ## Safety
 
 - Every playbook is safe to rerun, and rerunning is how you upgrade. One that replaces something, such as a VM, says in its header what a rerun after a failure does.
-- `--check --diff` changes nothing on the managed hosts and reports what a real run would change, except in the tasks it skips. It may write scratch files on the controller, under the org's [Secrets](https://github.com/junglestyle/.github/blob/main/code-standards/README.md#secrets) rules when they hold one.
+- `--check --diff` changes nothing on the managed hosts and reports what a real run would change, except in the tasks it skips. It may write scratch files on the controller, under the org's [Secrets](https://github.com/lowmagic/.github/blob/main/code-standards/README.md#secrets) rules when they hold one.
 - A task that only reads sets `check_mode: false`, so check mode has its result. A task that can't be previewed is skipped with `when: not ansible_check_mode` and has a comment saying what it changes, since the dry run won't show it. No later task needs its result in check mode.
 - Anything a playbook creates on shared ground, such as a VM, a dataset, or an app, carries a mark saying who made it. The playbook refuses to change or remove one without its mark.
 
@@ -29,7 +29,7 @@ Decisions for Ansible in deployment repos, beneath the org [standards](https://g
 
 - `make check` runs `ansible-playbook --syntax-check` on each playbook and `ansible-lint`, with the collections from `requirements.yml` already installed. The syntax check turns off the sops vars plugin (`ANSIBLE_VARS_ENABLED=host_group_vars`), so it needs no key.
 - `make check` runs ansible-core and ansible-lint through `uvx` at exact versions, so CI and the controller check with the same ones.
-- Each repo's `.ansible-lint` starts as a copy of the org's [`.ansible-lint`](https://github.com/junglestyle/.github/blob/main/code-standards/.ansible-lint) and is the repo's to change after that. A rule it skips gets a comment saying why.
+- Each repo's `.ansible-lint` starts as a copy of the org's [`.ansible-lint`](https://github.com/lowmagic/.github/blob/main/code-standards/.ansible-lint) and is the repo's to change after that. A rule it skips gets a comment saying why.
 
 ---
 

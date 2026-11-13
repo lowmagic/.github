@@ -1,6 +1,6 @@
 # .github
 
-The junglestyle organisation's shared files: [PRINCIPLES.md](PRINCIPLES.md), the
+The lowmagic organisation's shared files: [PRINCIPLES.md](PRINCIPLES.md), the
 [code standards](code-standards/README.md) every repo copies, [sync.sh](code-standards/sync.sh), which writes and
 checks those copies, the reusable workflow that runs that check in each repo's CI, and the organisation's profile.
 

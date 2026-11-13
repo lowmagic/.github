@@ -4,7 +4,7 @@
 #   sync.sh sync <dir> <sha>   write the copies from <dir>/code-standards, headed by <sha>
 #   sync.sh check <dir>        fail if a copy differs from <dir>/code-standards, is missing, or isn't declared
 #
-# <dir> holds a checkout of junglestyle/.github. README.md always applies and is copied to
+# <dir> holds a checkout of lowmagic/.github. README.md always applies and is copied to
 # docs/org-standards.md. Each topic listed in .org-standards (whitespace-separated, # starts a comment)
 # is copied from <topic>.md to docs/org-standards-<topic>.md. Every repo has .org-standards, even if it lists none.
 set -euo pipefail
@@ -48,16 +48,16 @@ declared() {
 
 sync() {
     local src=$1/code-standards sha=$2 list file copy
-    [[ -f $src/README.md ]] || { echo "no code-standards/README.md in $1: is it a junglestyle/.github checkout?" >&2; return 1; }
+    [[ -f $src/README.md ]] || { echo "no code-standards/README.md in $1: is it a lowmagic/.github checkout?" >&2; return 1; }
     list=$(pairs)
     while read -r file copy; do
-        [[ -f $src/$file ]] || { echo "unknown topic ${file%.md}: no code-standards/$file in junglestyle/.github" >&2; return 1; }
+        [[ -f $src/$file ]] || { echo "unknown topic ${file%.md}: no code-standards/$file in lowmagic/.github" >&2; return 1; }
     done <<<"$list"
 
     tmp=$(mktemp -d)
     trap 'rm -rf "$tmp"' EXIT
     while read -r file copy; do
-        { echo "<!-- junglestyle/.github code-standards/$file at $sha. Change it there, then run make sync-standards. -->"
+        { echo "<!-- lowmagic/.github code-standards/$file at $sha. Change it there, then run make sync-standards. -->"
           cat "$src/$file"; } >"$tmp/${copy##*/}"
     done <<<"$list"
     mkdir -p docs
@@ -73,11 +73,11 @@ sync() {
 
 check() {
     local src=$1/code-standards list file copy failed=0
-    [[ -f $src/README.md ]] || { echo "no code-standards/README.md in $1: is it a junglestyle/.github checkout?" >&2; return 1; }
+    [[ -f $src/README.md ]] || { echo "no code-standards/README.md in $1: is it a lowmagic/.github checkout?" >&2; return 1; }
     list=$(pairs)
     while read -r file copy; do
         if [[ ! -f $src/$file ]]; then
-            echo "unknown topic ${file%.md} in .org-standards: no code-standards/$file in junglestyle/.github" >&2
+            echo "unknown topic ${file%.md} in .org-standards: no code-standards/$file in lowmagic/.github" >&2
             failed=1
         elif [[ ! -f $copy ]]; then
             echo "$copy is missing: run make sync-standards" >&2

@@ -1,6 +1,6 @@
 # Shell standards
 
-Decisions for shell scripts, beneath the org [standards](https://github.com/junglestyle/.github/blob/main/code-standards/README.md).
+Decisions for shell scripts, beneath the org [standards](https://github.com/lowmagic/.github/blob/main/code-standards/README.md).
 
 ## Writing a script
 
