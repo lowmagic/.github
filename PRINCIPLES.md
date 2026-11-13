@@ -1,6 +1,6 @@
-# Jungle Style
+# Lowmagic
 
-Jungle Style is a philosophy I developed at my local gym where nobody re-racks their weights. At first it frustrated me. Then I realized that by working within the environment instead of against it, its flaws could add value. Now I look for setups already racked and work with what’s there. It saves time and adds variety.
+Lowmagic is a philosophy I developed at my local gym where nobody re-racks their weights. At first it frustrated me. Then I realized that by working within the environment instead of against it, its flaws could add value. Now I look for setups already racked and work with what’s there. It saves time and adds variety.
 
 That’s the whole philosophy. **Use what's already racked.** Arguing with reality gets you nowhere; working with it gets you leverage. The rest of this document is tactics.
 
@@ -58,4 +58,4 @@ That’s the whole philosophy. **Use what's already racked.** Arguing with reali
 
 ## For agents
 
-[code-standards/README.md](code-standards/README.md) is the enforceable version: these principles as rules you can check in review. Each repo's `AGENTS.md` links to its own copy; [corral's](https://github.com/junglestyle/corral/blob/main/docs/standards.md) is the reference example.
+[code-standards/README.md](code-standards/README.md) is the enforceable version: these principles as rules you can check in review. Each repo's `AGENTS.md` links to its own copy; [corral's](https://github.com/lowmagic/corral/blob/main/docs/standards.md) is the reference example.

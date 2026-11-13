@@ -1,6 +1,6 @@
 # Specification
 
-<!-- The shape of a junglestyle docs/SPEC.md. The product is made up: reachable checks that a list of HTTP
+<!-- The shape of a lowmagic docs/SPEC.md. The product is made up: reachable checks that a list of HTTP
 endpoints answers. -->
 
 ## Problem

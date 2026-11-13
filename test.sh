@@ -170,7 +170,7 @@ expect_usage "sync without a commit" "$d" sync "$root"
 expect_usage "check without a source" "$d" check
 expect_usage "check with extra arguments" "$d" check "$root" extra
 
-# A source that isn't a junglestyle/.github checkout.
+# A source that isn't a lowmagic/.github checkout.
 empty=$(mktemp -d "$work/source.XXXXXX")
 mkdir "$empty/code-standards"
 d=$(repo python)

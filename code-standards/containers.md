@@ -1,6 +1,6 @@
 # Container standards
 
-Decisions for Dockerfiles and compose files, beneath the org [standards](https://github.com/junglestyle/.github/blob/main/code-standards/README.md). Python images also follow [python.md](https://github.com/junglestyle/.github/blob/main/code-standards/python.md): they install with `uv sync --frozen`, never pip.
+Decisions for Dockerfiles and compose files, beneath the org [standards](https://github.com/lowmagic/.github/blob/main/code-standards/README.md). Python images also follow [python.md](https://github.com/lowmagic/.github/blob/main/code-standards/python.md): they install with `uv sync --frozen`, never pip.
 
 ## Dockerfile
 

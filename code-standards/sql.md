@@ -1,6 +1,6 @@
 # SQL standards
 
-Decisions for SQL and the databases that hold it, beneath the org [standards](https://github.com/junglestyle/.github/blob/main/code-standards/README.md). In Python, [python.md](https://github.com/junglestyle/.github/blob/main/code-standards/python.md) also covers SQL: parameterized queries through `sqlite3` or psycopg 3, numbered `NNN_name.sql` migrations, and a scratch database for each test run.
+Decisions for SQL and the databases that hold it, beneath the org [standards](https://github.com/lowmagic/.github/blob/main/code-standards/README.md). In Python, [python.md](https://github.com/lowmagic/.github/blob/main/code-standards/python.md) also covers SQL: parameterized queries through `sqlite3` or psycopg 3, numbered `NNN_name.sql` migrations, and a scratch database for each test run.
 
 ## Queries
 
