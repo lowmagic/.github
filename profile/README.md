@@ -1,5 +1,11 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lowmagic/.github/main/profile/assets/lowmagic-lockup-dark.svg">
+    <img src="https://raw.githubusercontent.com/lowmagic/.github/main/profile/assets/lowmagic-lockup-light.svg" alt="lowmagic" width="200">
+  </picture>
+</p>
 
-# junglestyle
+# lowmagic
 
 AI systems built and run on my own hardware by [Nathan Curry](https://nathancurry.com), a software maintenance engineer in Red Hat's OpenShift Enhanced Solution Support team.
 
