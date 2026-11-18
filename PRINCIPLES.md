@@ -1,6 +1,6 @@
-# Lowmagic
+# Jungle Style
 
-Lowmagic is a philosophy I developed at my local gym where nobody re-racks their weights. At first it frustrated me. Then I realized that by working within the environment instead of against it, its flaws could add value. Now I look for setups already racked and work with what’s there. It saves time and adds variety.
+Jungle Style is how everything at lowmagic gets built. I developed it at my local gym where nobody re-racks their weights. At first it frustrated me. Then I realized that by working within the environment instead of against it, its flaws could add value. Now I look for setups already racked and work with what’s there. It saves time and adds variety.
 
 That’s the whole philosophy. **Use what's already racked.** Arguing with reality gets you nowhere; working with it gets you leverage. The rest of this document is tactics.
 
@@ -13,8 +13,6 @@ That’s the whole philosophy. **Use what's already racked.** Arguing with reali
 **Wabi Sabi.** Rough and honest beats polished and fake. An ugly script that works and says what it is is fine.
 
 **Shoshin.** Beginner's mind. Read your own code as if a stranger wrote it, because in six months one did.
-
-**Zen of Python.** Explicit over implicit. Flat over nested. Readability counts. Applies outside Python too.
 
 ## Building
 
@@ -35,6 +33,8 @@ That’s the whole philosophy. **Use what's already racked.** Arguing with reali
 **Satisfice.** Good enough is the target, not a compromise.
 
 ## Structure
+
+**Zen of Python.** Explicit over implicit. Flat over nested. Readability counts. Applies outside Python too.
 
 **Explicit seams.** Hard boundaries between layers (ingestion, processing, presentation) with real interfaces between them. This keeps both humans and AI from mushing everything together.
 
