@@ -28,7 +28,7 @@ That’s the whole philosophy. **Use what's already racked.** Arguing with reali
 
 **Gall's Law.** Working complex systems grow out of working simple ones. Don't design the big one up front.
 
-**Worse is better.** Simple and shipped beats complete and correct.
+**Worse is better.** A simple design you ship beats a complete one you don't.
 
 **Satisfice.** Good enough is the target, not a compromise.
 
