@@ -33,6 +33,7 @@ flowchart LR
 
 - **[compa-engine](https://github.com/lowmagic/compa-engine)**: the Go library behind `compa`, owning sandboxed collection, cache-friendly conversation order, redaction, digest-pinned bundles, and evidence checks ([spec](https://github.com/lowmagic/compa-engine/blob/main/docs/SPEC.md), [architecture](https://github.com/lowmagic/compa-engine/blob/main/docs/ARCHITECTURE.md)).
 - **[compa-experts](https://github.com/lowmagic/compa-experts)**: embedded domain experts, shared file-inspection tool catalogs, and case routing rules.
+- **[prometheus-tsdb-reader](https://github.com/lowmagic/prometheus-tsdb-reader)**: static Go CLI and library that answers PromQL offline from a captured Prometheus TSDB archive, salvaging readable blocks and partial WAL records from damaged dumps and bounding output for a sandboxed caller ([spec](https://github.com/lowmagic/prometheus-tsdb-reader/blob/main/docs/SPEC.md), [decisions](https://github.com/lowmagic/prometheus-tsdb-reader/blob/main/docs/stack.md)).
 
 ## Smaller tools
 
