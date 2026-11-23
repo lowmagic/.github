@@ -1,8 +1,8 @@
-# Jungle Style
+# Principles
 
-Jungle Style is how everything at lowmagic gets built. I developed it at my local gym where nobody re-racks their weights. At first it frustrated me. Then I realized that by working within the environment instead of against it, its flaws could add value. Now I look for setups already racked and work with what’s there. It saves time and adds variety.
+How everything at lowmagic gets built: use what's already in the stack, keep hard seams between layers, and separate evidence from inference.
 
-That’s the whole philosophy. **Use what's already racked.** Arguing with reality gets you nowhere; working with it gets you leverage. The rest of this document is tactics.
+Arguing with reality gets you nowhere; working with it gets you leverage. The rest of this document is tactics.
 
 ---
 
