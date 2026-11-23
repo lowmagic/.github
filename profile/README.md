@@ -7,7 +7,7 @@
 
 Bounded AI systems and diagnostic tools by [Nathan Curry](https://nathancurry.com) ([LinkedIn](https://www.linkedin.com/in/nathandcurry)): OpenShift escalation and root-cause engineering at Red Hat.
 
-Every repo shares the same [principles](https://github.com/lowmagic/.github/blob/main/PRINCIPLES.md): use what's already in the stack, keep hard seams between layers, and separate evidence from inference. The [code standards](https://github.com/lowmagic/.github/blob/main/code-standards/README.md) turn that into rules synced into each repo and checked in CI and review.
+Everything here is built on the same [principles](https://github.com/lowmagic/.github/blob/main/PRINCIPLES.md): use what's already in the stack, keep hard seams between layers, and separate evidence from inference. The [code standards](https://github.com/lowmagic/.github/blob/main/code-standards/README.md) turn them into rules that each repo syncs and checks in CI and review.
 
 ## Support-case triage
 
